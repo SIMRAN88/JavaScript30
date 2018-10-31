@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" >
+   <head>
+      <meta charset="UTF-8">
+      <title>Weather Application</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <header class="card-header">
+         Weather Application
+      </header>
+      <div class = "card3 text" id="forecast">
+         <div class="row">
+            <br>
+            <div class = "col-md-5">
+               <div class = "day1" id="day1"></div>
+            </div>
+            <div class = "col-md-3">
+               <div>Temperature</div>
+               <div id = "temp1"></div>
+            </div>
+            <div class = "col-md-3">
+               <div>Humidity</div>
+               <div id = "hum1"></div>
+            </div>
+         </div>
+         <div class="row">
+            <br>
+            <div class = "col-md-5">
+               <div class = "day2" id="day2"></div>
+            </div>
+            <div class = "col-md-3">
+               <div>Temperature</div>
+               <div id = "temp2"></div>
+            </div>
+            <div class = "col-md-3">
+               <div>Humidity</div>
+               <div id = "hum2"></div>
+            </div>
+         </div>
+         <div class="row">
+            <br>
+            <div class = "col-md-5">
+               <div class = "day3" id="day3"></div>
+            </div>
+            <div class = "col-md-3">
+               <div>Temperature</div>
+               <div id = "temp3"></div>
+            </div>
+            <div class = "col-md-3">
+               <div>Humidity</div>
+               <div id = "hum3"></div>
+            </div>
+         </div>
+      </div>
+      <div class="card1">
+         <div class = "input-field">
+            <input type="text" placeholder="Enter City Name" id="searchTxt" class="well" >
+            <a id="searchBtn" href="#"></a>
+            <a class="btn-floating btn-large waves-effect waves-light red btn" id="btn"><i class="fas fa-heart"></i></a>
+            <a class="btn-floating btn-large waves-effect waves-light red btn" id="dislike"><i class="fas fa-times"></i></a>    
+         </div>
+      </div>
+      <div class="card" class = "text">
+         <div class = "top" id="top">
+         </div>
+         <div class = "horizontal-card">
+            <div class="row">
+               <div class = "col-md-6">
+                  <a class="btn-floating btn-small waves-effect waves-light red forecastbtn" id="forecastbtn"><i class="fas fa-bars"></i></a>
+                  <div id="cityName" class = "text"></div>
+               </div>
+               <div class="col-md-6">
+                  <div id = "date" class = "text"></div>
+                  <div id = "time" class = "text"></div>
+               </div>
+            </div>
+         </div>
+         <div class = "container-fluid">
+            <div class = "row">
+               <div class = "col-sm-6">
+                  <div class = "small-card">
+                     <div class="temperature" class = "text">
+                        <h6><b>Temperature</b></h6>
+                        <div id="temp" class = "text"></div>
+                        <span id="maxTemp" class = "text"></span>
+                        <span id="minTemp" class = "text"></span>
+                     </div>
+                  </div>
+               </div>
+               <div class = "col-sm-6">
+                  <div class = "small-card">
+                     <div class="humidity" class = "text">
+                        <h6 class = "text"><b>Humidity</b></h6>
+                        <div id="humidity" class = "text"></div>
+                        <br>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class = "row">
+               <div class = "col-sm-6">
+                  <div class = "small-card1">
+                     <div class="windspeed" class = "text">
+                        <h6 class = "text"><b>Wind Speed</b></h6>
+                        <div id="windSpeed" class = "text"></div>
+                     </div>
+                  </div>
+               </div>
+               <div class = "col-sm-6">
+                  <div class = "small-card1">
+                     <div class="pressure" class = "text">
+                        <h6 class = "text"><b>Pressure</b></h6>
+                        <div id="pressure" class = "text"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class = "horizontal-card">
+               <div id="message" class = "text">If you want to see the sunshine, you have to weather the storm.</div>
+            </div>
+         </div>
+      </div>
+      </div>
+      </div>
+   </body>
+   <script src='https://use.fontawesome.com/releases/v5.0.13/js/all.js'></script>
+   <script  src="index.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+</html>
